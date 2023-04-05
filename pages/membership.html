@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Membership Form</title>
+        <link href="../stylesheets/main_style.css" rel="stylesheet" type="text/css">
+        <link href="../stylesheets/membership_style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Austin Godot Engine Enthusiasts</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Membership</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Looking to join?</h2>
+            <p class="spacer">
+                Visited a few Meetups? Enjoying the vibe? Officially join the club by completing the form below! You'll get access to our monthly newsletter of tips and tricks, and an invite to our offical Discord server!
+            </p>
+            <div class="form_host">
+            <form class="spacer" onsubmit="sendNotice(document.getElementById('first_name')); reset(); return false;">
+                <h3>Enrollment Form</h3>
+                <input id="first_name" type="text" placeholder="First Name" required>
+                <input id="last_name" type="text" placeholder="Last Name" required>
+                <input id="street" type="text" placeholder="Street Address">
+                <input id="city" type="text" placeholder="City">
+                <input id="state" type="text" placeholder="State">
+                <input id="zip" type="number" placeholder="Zip Code">
+                <input id="occupation" type="text" placeholder="Occupation">
+                <input id="email" type="email" placeholder="Email address" required>
+                <input id="comments" type="text" placeholder="Comments?">
+                <button id="submit" type="submit">Submit</button>
+            </form>
+            </div>
+        </article>
+        <script>
+            function sendNotice(uName) {
+                alert(`Congragulations ${uName.value}, form submitted!`);
+            }
+        </script>
+        <footer>
+            <p>&copy; 2023 Andrew Jonhardt</p>
+        </footer>
+    </body>
+</html>

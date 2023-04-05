@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link href="../stylesheets/main_style.css" rel="stylesheet" type="text/css">
+        <link href="../stylesheets/membership_style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Austin Godot Engine Enthusiasts</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="./membership.html">Membership</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Questions? Comments? Send us your thoughts!</h2>
+            <div class="form_host">
+                <form class="spacer" onsubmit="sendNotice(document.getElementById('name')); reset(); return false;" style="align-self: center;">
+                    <input id="name" type="text" placeholder="Your Name" required style="margin-top: 24px;">
+                    <input id="email" type="email" placeholder="Your Email Address" required>
+                    <input id="comments" type="text" placeholder="Comments?">
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+                </div>
+        </article>
+        <script>
+            function sendNotice(uName) {
+                alert(`Congragulations ${uName.value}, form submitted!`);
+            }
+        </script>
+        <div class="fake_bg">
+        <footer>
+            <p>&copy; 2023 Andrew Jonhardt</p>
+        </footer>
+        </div>
+    </body>
+</html>

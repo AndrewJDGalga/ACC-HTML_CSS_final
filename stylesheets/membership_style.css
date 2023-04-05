@@ -1,0 +1,51 @@
+
+.form_host {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+
+form {
+    margin-bottom: 40px;
+    background-color: rgb(71, 140, 191);
+    display: flex;
+    width: 20em;
+    height: 20em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    border-radius: 10px;
+}
+
+form input {
+    padding:2px;
+    margin: 2px;
+    font-size: medium;
+    outline: none;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form h3 {
+    padding: 12px 0 6px;
+}
+
+form button {
+    margin-top: 4px;
+    font-size: large;
+    background-color: rgb(210,210,210);
+}
+
+form button:hover {
+    background-color:white;
+}
+
+@media screen and (max-width: 560px) {
+    .form_host {
+        width: 300px;
+    }
+}

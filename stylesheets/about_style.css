@@ -1,0 +1,35 @@
+
+article h2 {
+    padding: 4% 0 4%;
+}
+
+article p {
+    padding: 0 0 2%;
+}
+
+img {
+    max-width: 640px;
+    width: 80%;
+    min-width: 256px;
+    border-radius: 50%;
+    height: auto;
+    padding: 4%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media screen and (max-width: 360px) {
+    
+    h1 {
+        width: 380px;
+    }
+
+    h1,
+    article,
+    nav {
+        width: 360px;
+    }
+}
